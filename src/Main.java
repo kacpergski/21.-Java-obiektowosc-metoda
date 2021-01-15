@@ -66,5 +66,12 @@ public class Main {
         //System.out.println("Suma " +o1.a + " + " + o1.b +" = " + o1.sum(200,1));
 
         System.out.println("Suma 1+2+3+4+5 = " + o1.sum(1,2,3,4,5));
+
+        // zadanie 4
+        int[]values = {1,2,3,4,5};
+        int sum = o1.sumArray(values);  // przypisanie wartosci zwaracanej przez metode sumArray obiektu o1 dla argumentów parametru values który jest tablicą
+        System.out.println(sum);
+
+        System.out.println(o1.avg(values)); // bez przypisania metoda dla obiektu o1 wywołana bezpośrenio do wypisania na ekranie
     }
 }
