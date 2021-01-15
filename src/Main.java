@@ -52,5 +52,19 @@ public class Main {
         radiators[2].display();
         double powerInkW = radiators[2].powerInkW();
         System.out.println("Power in kW: " + powerInkW + " kW");
+
+
+        // zadanie 3
+
+        MiniCalculator o1 = new MiniCalculator();  //s nowy obiekt klasy MiniCalcualtor
+       // int suma = o1.sum(3,4);          //wywołanie metody na obiekcie i przypisanie do zmiennej suma
+      //  System.out.println("Suma 3 + 4 = " + suma); // wyświetlenie zwróconego do zmienneej "suma" wyniku
+     //    suma = o1.sum(103,44);          //wywołanie metody na obiekcie
+       // System.out.println("Suma " +o1.a + " + " + o1.b +" = " + suma); // wyświetlenie zwróconego wyniku
+
+
+        //System.out.println("Suma " +o1.a + " + " + o1.b +" = " + o1.sum(200,1));
+
+        System.out.println("Suma 1+2+3+4+5 = " + o1.sum(1,2,3,4,5));
     }
 }
