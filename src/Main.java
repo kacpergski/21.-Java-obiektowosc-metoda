@@ -4,9 +4,9 @@ public class Main {
 
         char red[] = {'r', 'e', 'd'};
         char blue[] = {'b', 'l', 'u', 'e'};
-        Radiator r1 = new Radiator(red, 20, 600);
-        Radiator r2 = new Radiator(blue, 30, 800);
-        Radiator r3 = new Radiator(red, 15, 300);
+        Radiator r1 = new Radiator(red, 20, 6023);
+        Radiator r2 = new Radiator(blue, 30, 805);
+        Radiator r3 = new Radiator(red, 15, 3212);
 
         Radiator[] radiators = new Radiator[3];
         radiators[0] = r1;
@@ -50,5 +50,7 @@ public class Main {
         radiators[2].weight = 1000;
 
         radiators[2].display();
+        double powerInkW = radiators[2].powerInkW();
+        System.out.println("Power in kW: " + powerInkW + " kW");
     }
 }
