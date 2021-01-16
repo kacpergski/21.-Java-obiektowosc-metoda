@@ -73,5 +73,32 @@ public class Main {
         System.out.println(sum);
 
         System.out.println(o1.avg(values)); // bez przypisania metoda dla obiektu o1 wywołana bezpośrenio do wypisania na ekranie
+
+        // zadanie 5
+        char [] yellow = {'y','e','l','l','o','w'};
+        char [] green = {'g','r','e','e','n'};
+        Amber a1 = new Amber(yellow,2, 3, 100 );
+        Amber a2 = new Amber(green,3, 4, 130 );
+
+        Amber [] ambers = new Amber[2];
+        ambers[0] = a1;
+        ambers[1] = a2;
+        System.out.println("-------------------------------------");
+        System.out.println("Zadanie 5  - Muzeum bursztynu");
+        System.out.println();
+        for ( Amber a: ambers){
+
+            a.display();
+        }
+
+        //zwiekszenie gestosci o 100 i wyswietlenie wartoeci dla obiektow
+        System.out.println("Density value of amber a1: + 100");
+        System.out.println();
+
+        a1.addAmberDensityIncreaseValue(100);   //zwiekszenie gestosci o 100
+
+        for ( Amber a: ambers){
+            a.display();
+        }
     }
 }
