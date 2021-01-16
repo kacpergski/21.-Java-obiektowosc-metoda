@@ -100,5 +100,15 @@ public class Main {
         for ( Amber a: ambers){
             a.display();
         }
+
+
+        // zadanie 6------------------------------------------------------
+        System.out.println("-------------------------------------");
+        System.out.println("Zadanie 6  - ");
+        System.out.println();
+
+        Paint p1 = new Paint('$',5 );
+
+        p1.display();
     }
 }
